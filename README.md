@@ -14,15 +14,15 @@
 `:bf` and `:bl` - first and last
 `:bm` - next modified
 
-###### Saving files
-`:w`, `:wq` - write/write-and-close
-`:x` - write buffer if there was a modification
-`:qa!` - quit everything, ignore changes everywhere
-`:wqa` - the opposite
+###### Saving files  
+`:w`, `:wq` - write/write-and-close  
+`:x` - write buffer if there was a modification  
+`:qa!` - quit everything, ignore changes everywhere  
+`:wqa` - the opposite  
 
 ###### Creating new files  
 `:new [fname]` - create empty buffer with horizontal split window  
 `:enew [fname]` - within the current buffer  
-`vnew [fname]` - vertical split window  
-`tabnew [fname]` - buffer within new tab  
+`:vnew [fname]` - vertical split window  
+`:tabnew [fname]` - buffer within new tab  
 
