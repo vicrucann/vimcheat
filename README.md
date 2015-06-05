@@ -28,4 +28,10 @@
 `:enew [fname]` - within the current buffer  
 `:vnew [fname]` - vertical split window  
 `:tabnew [fname]` - buffer within new tab  
-`:only` - closes all the split windows until there is only one window left open
+`:only` - closes all the split windows until there is only one window left open  
+`autocmd BufNewFile *.template` # added to .vimrc - new file from template  
+
+###### Switching the working directory  
+`:cd ~/new/path` - go to ~/new/path  
+`:pwd` - display path to current directory  
+`:lcd ~/new/path` - change directory only for current window
