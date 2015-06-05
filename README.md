@@ -16,10 +16,10 @@
 
 ###### Moving between files
 `:bn` and `:bp` - move to the next\previous buffer in the list  
-`:ls` - list all available buffers  
-`:b#` - move between two last used (primary) buffers
-`:bf` and `:bl` - first and last
-`:bm` - next modified
+`:ls` - list all available buffers   
+`:b#` - move between two last used (primary) buffers  
+`:bf` and `:bl` - first and last  
+`:bm` - next modified  
 
 ###### Saving/quitting  
 `:w`, `:wq` - write/write-and-close  
