@@ -4,8 +4,8 @@
 [Vim's Wiki](http://vim.wikia.com)
 
 ### Content
-[Working with files](https://github.com/vicrucann/vimcheat/blob/master/README.md#files)
-[Main commands](https://github.com/vicrucann/vimcheat/blob/master/README.md#commands)
+[Working with files](https://github.com/vicrucann/vimcheat/blob/master/README.md#files)  
+[Main commands](https://github.com/vicrucann/vimcheat/blob/master/README.md#commands)  
 
 ### Files  
 
