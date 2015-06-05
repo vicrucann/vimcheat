@@ -5,6 +5,7 @@
 
 ### Content
 [Working with files](https://github.com/vicrucann/vimcheat/blob/master/README.md#files)
+[Main commands](https://github.com/vicrucann/vimcheat/blob/master/README.md#commands)
 
 ### Files  
 
@@ -37,4 +38,7 @@
 ###### Switching the working directory  
 `:cd ~/new/path` - go to ~/new/path  
 `:pwd` - display path to current directory  
-`:lcd ~/new/path` - change directory only for current window
+`:lcd ~/new/path` - change directory only for current window  
+
+### Commands  
+
