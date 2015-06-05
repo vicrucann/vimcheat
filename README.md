@@ -3,6 +3,9 @@
 `:h {command}` - help page on the *command*  
 [Vim's Wiki](http://vim.wikia.com)
 
+### Content
+[Working with files](https://github.com/vicrucann/vimcheat/blob/master/README.md#files)
+
 ### Files  
 
 ###### Open a file from the current buffer  
