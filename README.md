@@ -61,5 +61,14 @@
 
 ###### Motions  
 `:h motions`  
-
+`0` and `$` and `g_` - move cursor to the start \ end \ end (exclusive newline) of line  
+`b` - move backwards through each word  
+`e` - move to the end of the word  
+`w` - move to the start of the next word  
+`gg` and `G` - start \ end of the buffer  
+`%` - next bracket or paranthesis  
+`(` and `)` - previous \ next sentence  
+`{` and `}` - start and end of a paragraph  
+`[(` and `])` - next \ previous available paranthesis  
+`[{` and `]}` - next \ previous available bracket  
 
