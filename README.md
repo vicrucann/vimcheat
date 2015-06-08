@@ -41,4 +41,25 @@
 `:lcd ~/new/path` - change directory only for current window  
 
 ### Commands  
+`[count]{operator}{[count]motion|text object}`  
+
+###### Operators  
+`yy` - yank the entire line  
+`p` and `P` - paste content after\before the current cursor position  
+`a` and `i` - insert mode before\after the current position  
+`f` and `t` - find spicified characters to the right of current position \ until the specified character  
+`o` and `O` - move cursor to the next \ previous line and enter *INSERT* mode  
+`x` - cut the character (selected chars)  
+`s` - substitute character (selected chars)  
+`S` - substitute entire line  
+`u` - undo  
+`~` - swap char casing  
+`.` - repeat last insert  
+`dd` - delete current line  
+`D` or `d$` - delete from the cursor to end of line  
+`gx` - open url under cursor  
+
+###### Motions  
+`:h motions`  
+
 
