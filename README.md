@@ -87,3 +87,12 @@
 `C-d` and `C-g` - half \ one page down  
 `C-e` and `C-y` - scroll page down \ up  
 `H`, `M` and `L` - move cursor to the top \ middle \ bottom of the viewport  
+
+###### Text objects  
+`(i)` - inside   
+`(a)` - around  
+`(w)` - word, e.g: `viw` - select inside a word, select the whole word no matter where the cursor is within this word  
+`(s)` - sentence, e.g: `vis` - select inside sentence  
+`(p)` - paragraph, e.g: `vip` - select inside paragraph  
+`{}`, `()`, `[]`, `''`, `""` - block and quotations, e.g: `vi"` - select inside quotes, `va{` - select around the brackets  
+
