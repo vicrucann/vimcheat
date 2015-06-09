@@ -2,6 +2,7 @@
 
 `:h {command}` - help page on the *command*  
 [Vim's Wiki](http://vim.wikia.com)
+Reference: [ProVim](http://link.springer.com/book/10.1007%2F978-1-4842-0250-0)
 
 ### Content
 [Working with files](https://github.com/vicrucann/vimcheat/blob/master/README.md#files)  
