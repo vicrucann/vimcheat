@@ -80,3 +80,10 @@
 `gu` - lowercase chars  
 `gU` - uppercase chars  
 
+###### Cursor and page movements  
+`h` and `l` - one column to the left \ right  
+`j` and `k` - one rwo down \ up  
+`C-u` and `C-b` - half \ one page up  
+`C-d` and `C-g` - half \ one page down  
+`C-e` and `C-y` - scroll page down \ up  
+`H`, `M` and `L` - move cursor to the top \ middle \ bottom of the viewport  
