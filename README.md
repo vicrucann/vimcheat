@@ -84,9 +84,9 @@ Reference: [ProVim](http://link.springer.com/book/10.1007%2F978-1-4842-0250-0)
 ###### Cursor and page movements  
 `h` and `l` - one column to the left \ right  
 `j` and `k` - one rwo down \ up  
-`C-u` and `C-b` - half \ one page up  
-`C-d` and `C-g` - half \ one page down  
-`C-e` and `C-y` - scroll page down \ up  
+`<C-u>` and `<C-b>` - half \ one page up  
+`<C-d>` and `<C-g>` - half \ one page down  
+`<C-e>` and `<C-y>` - scroll page down \ up  
 `H`, `M` and `L` - move cursor to the top \ middle \ bottom of the viewport  
 
 ###### Text objects  
@@ -96,4 +96,8 @@ Reference: [ProVim](http://link.springer.com/book/10.1007%2F978-1-4842-0250-0)
 `(s)` - sentence, e.g: `vis` - select inside sentence  
 `(p)` - paragraph, e.g: `vip` - select inside paragraph  
 `{}`, `()`, `[]`, `''`, `""` - block and quotations, e.g: `vi"` - select inside quotes, `va{` - select around the brackets  
+
+###### Insert mode commands  
+`:h ins-special-special` - documentation  
+`<C-o>` - mode to run commands in insert mode  
 
