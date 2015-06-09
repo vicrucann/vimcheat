@@ -63,12 +63,20 @@
 `:h motions`  
 `0` and `$` and `g_` - move cursor to the start \ end \ end (exclusive newline) of line  
 `b` - move backwards through each word  
-`e` - move to the end of the word  
-`w` - move to the start of the next word  
-`gg` and `G` - start \ end of the buffer  
+`e` - move to the end of the word, e.g: `3e` - end of third word  
+`w` - move to the start of the next word, e.g: `3w` - start of fourth word  
+`gg` and `G` - start \ end of the buffer, e.g: `5gg` or `5G` - line five  
 `%` - next bracket or paranthesis  
 `(` and `)` - previous \ next sentence  
 `{` and `}` - start and end of a paragraph  
 `[(` and `])` - next \ previous available paranthesis  
 `[{` and `]}` - next \ previous available bracket  
+
+###### Operators that require motions or other commands  
+`v` and `V` - visual mode \ select whole line, e.g: `ve` - select until end of word  
+`y` and `Y` - yank (copy) selected text \ copy whole line    
+`d` and `dd` - delete selected text \ delete whole line, e.g: `d2w` - delete two words  
+`c` - change characters, e.g: `c2w words` - change next to words to "words"  
+`gu` - lowercase chars  
+`gU` - uppercase chars  
 
