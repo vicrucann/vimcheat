@@ -101,3 +101,11 @@ Reference: [ProVim](http://link.springer.com/book/10.1007%2F978-1-4842-0250-0)
 `:h ins-special-special` - documentation  
 `<C-o>` - mode to run commands in insert mode  
 
+### Registers  
+`""` - unnamed register, used after commands delete `d`, change `c`, substitute `s`, cut `x`, yank `y`; also it is used as *last used register*, e.g: `""p` - paste from unnamed register  
+`"0... "9` - numbered, used with commands yank `y` and delete `d`, e.g: `viw"2y` - copy whole word to specified register *2*; `"2p` - paste from specified register *2*   
+`"a... "z` or `"A... "Z` - named (small case overwrite, capital case - appends to the current buffer), e.g: `"ay` copy to register *a*, `"Ay` - append to register *a*  
+`":`, `".`, `"%` and `"#` - read only  
+`"=` - expression  
+`"/` - last search pattern
+`:reg` - view content of the registers, e.g: `:reg 0 * a`  
