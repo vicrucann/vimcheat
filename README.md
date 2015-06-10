@@ -75,7 +75,7 @@ Reference: [ProVim](http://link.springer.com/book/10.1007%2F978-1-4842-0250-0)
 
 ###### Operators that require motions or other commands  
 `v` and `V` - visual mode \ select whole line, e.g: `ve` - select until end of word  
-`y` and `Y` - yank (copy) selected text \ copy whole line    
+`y` and `yy` - yank (copy) selected text \ copy whole line    
 `d` and `dd` - delete selected text \ delete whole line, e.g: `d2w` - delete two words  
 `c` - change characters, e.g: `c2w words` - change next to words to "words"  
 `gu` - lowercase chars  
