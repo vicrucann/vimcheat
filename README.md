@@ -7,6 +7,7 @@ Reference: [ProVim](http://link.springer.com/book/10.1007%2F978-1-4842-0250-0)
 ### Content
 [Working with files](https://github.com/vicrucann/vimcheat/blob/master/README.md#files)  
 [Main commands](https://github.com/vicrucann/vimcheat/blob/master/README.md#commands)  
+[Working with registers](https://github.com/vicrucann/vimcheat/blob/master/README.md#registers)
 
 ### Files  
 
