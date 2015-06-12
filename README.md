@@ -25,6 +25,7 @@ Reference: [ProVim](http://link.springer.com/book/10.1007%2F978-1-4842-0250-0)
 
 ###### Saving/quitting  
 `:w`, `:wq` - write/write-and-close  
+`:w filename` - save as filename and keep working on original  
 `:x` - write buffer if there was a modification  
 `:qa!` - quit everything, ignore changes everywhere  
 `:wqa` - the opposite  
@@ -36,6 +37,11 @@ Reference: [ProVim](http://link.springer.com/book/10.1007%2F978-1-4842-0250-0)
 `:tabnew [fname]` - buffer within new tab  
 `:only` - closes all the split windows until there is only one window left open  
 `autocmd BufNewFile *.template` # added to .vimrc - new file from template  
+
+###### Moving between tabs  
+`gt`, `gT` and `{i}gt` - in normal mode, go to next \ previous \ tab in position {i}  
+`:tabn` and `:tabp` - go to next \ previous tab  
+`C-pgUp` and `C-pgDown` - when in gvim  
 
 ###### Switching the working directory  
 `:cd ~/new/path` - go to ~/new/path  
