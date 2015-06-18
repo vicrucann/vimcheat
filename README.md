@@ -9,6 +9,7 @@ Reference: [ProVim](http://link.springer.com/book/10.1007%2F978-1-4842-0250-0)
 [Main commands](https://github.com/vicrucann/vimcheat/blob/master/README.md#commands)  
 [Working with registers](https://github.com/vicrucann/vimcheat/blob/master/README.md#registers)  
 [VISUAL-BLOCK mode](https://github.com/vicrucann/vimcheat/blob/master/README.md#visual-block)  
+[Navigation](https://github.com/vicrucann/vimcheat/blob/master/README.md#navigation-and-search)  
 
 ### Files  
 
