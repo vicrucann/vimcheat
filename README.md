@@ -24,11 +24,12 @@ Reference: [ProVim](http://link.springer.com/book/10.1007%2F978-1-4842-0250-0)
 `:bm` - next modified  
 
 ###### Saving/quitting  
-`:w`, `:wq` - write/write-and-close  
+`:w`, `:wq` - write/write-and-close, e.g: `:w filename` - save as `filename` and continue working on original  
 `:w filename` - save as filename and keep working on original  
 `:x` - write buffer if there was a modification  
 `:qa!` - quit everything, ignore changes everywhere  
 `:wqa` - the opposite  
+`:sav filename` - save as `filename` and continue working on `filename`  
 
 ###### Creating new files  
 `:new [fname]` - create empty buffer with horizontal split window  
