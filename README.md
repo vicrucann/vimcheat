@@ -123,3 +123,14 @@ Reference: [ProVim](http://link.springer.com/book/10.1007%2F978-1-4842-0250-0)
 `C-v` - enter into VISUAL-BLOCK mode  
 `C-c` - keep the changes made to the current line but not apply them automatically to other lines  
 `Esc` - move back to NORMAL mode (and apply the changes to the rest lines of the selection of VISUAL-BLOCK mode)  
+
+### Navigation and search 
+`[count]gg` or `[count]G` - move cursor to line `count`  
+`f` and `F` - search forward and backward, e.g: `f#` - search `#` character
+`;` and ',' - move your cursor onto next occurence of the character you tried to match with `f` and `F`  
+`/` - using in regex search command, e.g: `/function` - finds all occurences of word `function`  
+`n` and `N` - navigates throughout the search results from `/` operator  
+`%` - detects a block (bracket) and moves to a closing one  
+`vt{x}` and `va{x}` - select until and select around the block, e.g: `va{`, `va[t)` - select around `[` and til `)`  
+`:s/{pattern}/{replacement}/{flags}` - find and replace, e.g: `:%s/foo/bar/gc` - Change each `foo` to `bar`, but ask for confirmation first  
+
