@@ -117,3 +117,8 @@ Reference: [ProVim](http://link.springer.com/book/10.1007%2F978-1-4842-0250-0)
 `"=` - expression  
 `"/` - last search pattern
 `:reg` - view content of the registers, e.g: `:reg 0 * a`  
+
+### Visual block 
+`C-v` - enter into VISUAL-BLOCK mode  
+`C-c` - keep the changes made to the current line but not apply them automatically to other lines  
+`Esc` - move back to NORMAL mode (and apply the changes to the rest lines of the selection of VISUAL-BLOCK mode)  
