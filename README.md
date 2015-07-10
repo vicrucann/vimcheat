@@ -125,7 +125,7 @@ Reference: [ProVim](http://link.springer.com/book/10.1007%2F978-1-4842-0250-0)
 `C-c` - keep the changes made to the current line but not apply them automatically to other lines  
 `Esc` - move back to NORMAL mode (and apply the changes to the rest lines of the selection of VISUAL-BLOCK mode)  
 
-### Navigation and search 
+### Navigation, search and replace 
 `[count]gg` or `[count]G` - move cursor to line `count`  
 `f` and `F` - search forward and backward, e.g: `f#` - search `#` character
 `;` and ',' - move your cursor onto next occurence of the character you tried to match with `f` and `F`  
@@ -133,5 +133,9 @@ Reference: [ProVim](http://link.springer.com/book/10.1007%2F978-1-4842-0250-0)
 `n` and `N` - navigates throughout the search results from `/` operator  
 `%` - detects a block (bracket) and moves to a closing one  
 `vt{x}` and `va{x}` - select until and select around the block, e.g: `va{`, `va[t)` - select around `[` and til `)`  
-`:s/{pattern}/{replacement}/{flags}` - find and replace, e.g: `:%s/foo/bar/gc` - Change each `foo` to `bar`, but ask for confirmation first  
-
+`:s/{pattern}/{replacement}/{flags}` - find and replace, e.g: `:%s/foo/bar/gc` - Change each `foo` to `bar`, but ask for confirmation first (flag `g` stands for global and `c` - confirmation first)  
+  
+`:find foo.txt` or `:sfind foo.txt` - search specific file or open it in a split window  
+`/searchword` or `?searchword` - highlight "searchword"  
+`n` or `N` - to navigate through each match  
+`*` or `#` - search forward or backward for word where the cursor is
