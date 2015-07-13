@@ -139,3 +139,16 @@ Reference: [ProVim](http://link.springer.com/book/10.1007%2F978-1-4842-0250-0)
 `/searchword` or `?searchword` - highlight "searchword"  
 `n` or `N` - to navigate through each match  
 `*` or `#` - search forward or backward for word where the cursor is
+
+### Makefile  
+`:map <f9> :make` - vimrc, map the <F9> to run make  
+`:set makeprg` - change what `:make` does  
+`:copen` - open a mini-window with list of errors; hit enter on an error to jump to line  
+`:cclose` - closes the mini-window  
+`:cw` - toggles the mini-window (if errors exist)  
+`:cn` - goto the next error in source code  
+`:cp` - goto the previous error in source code  
+`:cfirst` - goto the first error in source code  
+`:clast` - goto the last error in source code  
+`map cn <esc>:cn<cr>` - in vimrc to map `:cn` command  
+`map cp <esc>:cp<cr>` - in vimrc to map `:cp` command  
