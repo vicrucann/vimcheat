@@ -60,7 +60,8 @@ Reference: [ProVim](http://link.springer.com/book/10.1007%2F978-1-4842-0250-0)
 `yy` - yank the entire line  
 `p` and `P` - paste content after\before the current cursor position  
 `a` and `i` - insert mode before\after the current position  
-`f` and `t` - find spicified characters to the right of current position \ until the specified character  
+`f`/`F` and `t` - find spicified characters to the right of current position \ until the specified character, e.g `f#` - move cursor to the next occurence of `#`  
+`;` or `,` - move on the next occurence of chracter defined by `f` or `t`  
 `o` and `O` - move cursor to the next \ previous line and enter *INSERT* mode  
 `x` - cut the character (selected chars)  
 `s` - substitute character (selected chars)  
