@@ -152,3 +152,24 @@ Reference: [ProVim](http://link.springer.com/book/10.1007%2F978-1-4842-0250-0)
 `:clast` - goto the last error in source code  
 `map cn <esc>:cn<cr>` - in vimrc to map `:cn` command  
 `map cp <esc>:cp<cr>` - in vimrc to map `:cp` command  
+
+### Buffer/window/tab management 
+`:ls` - list all currently open buffers  
+`:sba` or `:vert sba` - split all the open windows into horizontal / vertical windows  
+`:bd *.ext` - "buffer delete": close all windows with `.ext` extension  
+`:bd 1 3 5` - buffer delete and number(-s)
+`:4,7 bd` - buffer delete using range  
+`:bufdo bd` - close all at once  
+`:sp [file]` or `:vs [file]` - create horizontal/vertical window split (and opens [filename] in there)  
+`:on` or `:only` - close all but current one  
+`<C-w>H` or `<C-w>J` or `<C-w>K` or `<C-w>L` - left/down/up/right - changing the window layout  
+`:resize +{n}` or `:resize -{n}` - increase / reduce the window height by `{n}` amount  
+`:vertical resize +{n}` or `:vertical resize -{n}` - same as above but for width  
+`<C-w>_` - maximize the window height  
+`<C-w>|` - maximize the window width  
+`<C-w>=` - resize all windows to balanced dimensions  
+`<C-w>T` - move current window into its own tab  
+`:tabnew` - create new tab  
+`gt` and `gT` - move between the tabs  
+`:tabonly` - close all but current tab  
+`:tabmove 1` - rearrange tabs   
