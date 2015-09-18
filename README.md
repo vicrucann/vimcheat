@@ -176,3 +176,7 @@ Reference: [ProVim](http://link.springer.com/book/10.1007%2F978-1-4842-0250-0)
 `gt` and `gT` - move between the tabs  
 `:tabonly` - close all but current tab  
 `:tabmove 1` - rearrange tabs   
+
+### Plugins
+`:NERDTree` - open file manager  
+* `r` - updates the current folder content on NERDTree
