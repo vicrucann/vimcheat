@@ -12,6 +12,7 @@ Reference: [ProVim](http://link.springer.com/book/10.1007%2F978-1-4842-0250-0)
 [Navigation, search, replace](https://github.com/vicrucann/vimcheat/blob/master/README.md#navigation-search-and-replace)  
 [Makefile](https://github.com/vicrucann/vimcheat/blob/master/README.md#makefile)  
 [Buffer, window and tab management](https://github.com/vicrucann/vimcheat/blob/master/README.md#bufferwindowtab-management)  
+[Spell check](https://github.com/vicrucann/vimcheat/blob/master/README.md#spell-check)  
 
 ### Files  
 
