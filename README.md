@@ -181,3 +181,13 @@ Reference: [ProVim](http://link.springer.com/book/10.1007%2F978-1-4842-0250-0)
 `:NERDTree` - open file manager  
 * `<C-w> <left>` or `<C-w> <right>` - move between file manager and main vim window
 * `r` - updates the current folder content on NERDTree
+
+### Spell check
+`:set spell spelllang=en_us` - turn the spell on with specified language (US English)  
+`:setlocal spell spelllang=en_us` - use it only for local buffer  
+`:set nospell` - turn the spell off  
+`[s` and `]s` - move between the misspelled words  
+`z=` - once the curson is on the word, the command will provide a list of possible corrections  
+`zg` - add the word to dictionary  
+`zw` - mark the word as incorrect  
+`set spell spelllang=en_us` - add to vimrc to remember the language setting  
