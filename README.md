@@ -4,7 +4,7 @@
 [Vim's Wiki](http://vim.wikia.com)  
 Reference: [ProVim](http://link.springer.com/book/10.1007%2F978-1-4842-0250-0)
 
-### Content
+# Content
 [Working with files](https://github.com/vicrucann/vimcheat/blob/master/README.md#files)  
 [Main commands](https://github.com/vicrucann/vimcheat/blob/master/README.md#commands)  
 [Working with registers](https://github.com/vicrucann/vimcheat/blob/master/README.md#registers)  
@@ -14,21 +14,21 @@ Reference: [ProVim](http://link.springer.com/book/10.1007%2F978-1-4842-0250-0)
 [Buffer, window and tab management](https://github.com/vicrucann/vimcheat/blob/master/README.md#bufferwindowtab-management)  
 [Spell check](https://github.com/vicrucann/vimcheat/blob/master/README.md#spell-check)  
 
-### Files  
+# Files  
 
-###### Open a file from the current buffer  
+## Open a file from the current buffer  
 `e: path/fname` - open fname  
 `e: <Space><C-d>` - list all available directories/files  
 `e:` `<Tab><Tab>...` - cycle through all availabe items  
 
-###### Moving between files
+## Moving between files
 `:bn` and `:bp` - move to the next\previous buffer in the list  
 `:ls` - list all available buffers   
 `:b#` - move between two last used (primary) buffers  
 `:bf` and `:bl` - first and last  
 `:bm` - next modified  
 
-###### Saving/quitting  
+## Saving/quitting  
 `:w`, `:wq` - write/write-and-close, e.g: `:w filename` - save as `filename` and continue working on original  
 `:w filename` - save as filename and keep working on original  
 `:x` - write buffer if there was a modification  
@@ -36,28 +36,34 @@ Reference: [ProVim](http://link.springer.com/book/10.1007%2F978-1-4842-0250-0)
 `:wqa` - the opposite  
 `:sav filename` - save as `filename` and continue working on `filename`  
 
-###### Creating new files  
+## Creating new files  
 `:new [fname]` - create empty buffer with horizontal split window  
 `:enew [fname]` - within the current buffer  
 `:vnew [fname]` - vertical split window  
 `:tabnew [fname]` - buffer within new tab  
-`:only` - closes all the split windows until there is only one window left open  
+`:only` - closes all the split windows until there ish only one window left open  
 `autocmd BufNewFile *.template` # added to .vimrc - new file from template  
 
-###### Moving between tabs  
+## Moving between tabs  
 `gt`, `gT` and `{i}gt` - in normal mode, go to next \ previous \ tab in position {i}  
 `:tabn` and `:tabp` - go to next \ previous tab  
 `C-pgUp` and `C-pgDown` - when in gvim  
 
-###### Switching the working directory  
+## Switching the working directory  
 `:cd ~/new/path` - go to ~/new/path  
 `:pwd` - display path to current directory  
-`:lcd ~/new/path` - change directory only for current window  
+`:lcd ~/new/path` - change directory only for current window
 
-### Commands  
+## `NERDTree` - directory view
+`:NERDTree` - open the directory browser in the current window
+`:NERDTreeClose` - close the directory browser in the current window
+`<C>-w-l` - switch the focus from the NERDTree to the file view
+`<C>-w-h` - switch the focus from the file view to the NERDTree
+
+# Commands  
 `[count]{operator}{[count]motion|text object}`  
 
-###### Operators  
+## Operators  
 `yy` - yank the entire line  
 `p` and `P` - paste content after\before the current cursor position  
 `a` and `i` - insert mode before\after the current position  
@@ -74,7 +80,7 @@ Reference: [ProVim](http://link.springer.com/book/10.1007%2F978-1-4842-0250-0)
 `D` or `d$` - delete from the cursor to end of line  
 `gx` - open url under cursor  
 
-###### Motions  
+## Motions  
 `:h motions`  
 `0` and `$` and `g_` - move cursor to the start \ end \ end (exclusive newline) of line  
 `b` - move backwards through each word  
