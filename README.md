@@ -55,10 +55,10 @@ Reference: [ProVim](http://link.springer.com/book/10.1007%2F978-1-4842-0250-0)
 `:lcd ~/new/path` - change directory only for current window
 
 ## `NERDTree` - directory view
-`:NERDTree` - open the directory browser in the current window
-`:NERDTreeClose` - close the directory browser in the current window
-`<C>-w-l` - switch the focus from the NERDTree to the file view
-`<C>-w-h` - switch the focus from the file view to the NERDTree
+`:NERDTree` - open the directory browser in the current window  
+`:NERDTreeClose` - close the directory browser in the current window  
+`<C>-w-l` - switch the focus from the NERDTree to the file view  
+`<C>-w-h` - switch the focus from the file view to the NERDTree  
 
 # Commands  
 `[count]{operator}{[count]motion|text object}`  
