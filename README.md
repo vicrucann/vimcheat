@@ -170,9 +170,10 @@ Reference: [ProVim](http://link.springer.com/book/10.1007%2F978-1-4842-0250-0)
 `:bd 1 3 5` - buffer delete and number(-s)
 `:4,7 bd` - buffer delete using range  
 `:bufdo bd` - close all at once  
-`:sp [file]` or `:vs [file]` - create horizontal/vertical window split (and opens [filename] in there)  
+`:sp [file]` or `:vs [file]` or `split` - create horizontal/vertical window split (and opens [filename] in there)  
 `:on` or `:only` - close all but current one  
 `<C-w>H` or `<C-w>J` or `<C-w>K` or `<C-w>L` - left/down/up/right - changing the window layout  
+`<C-w>h` or `<C-w>j` or `<C-w>k` or `<C-w>l` - changing focus of the view window    
 `:resize +{n}` or `:resize -{n}` - increase / reduce the window height by `{n}` amount  
 `:vertical resize +{n}` or `:vertical resize -{n}` - same as above but for width  
 `<C-w>_` - maximize the window height  
