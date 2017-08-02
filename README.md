@@ -86,7 +86,8 @@ Reference: [ProVim](http://link.springer.com/book/10.1007%2F978-1-4842-0250-0)
 `b` - move backwards through each word  
 `e` - move to the end of the word, e.g: `3e` - end of third word  
 `w` - move to the start of the next word, e.g: `3w` - start of fourth word  
-`gg` and `G` - start \ end of the buffer, e.g: `5gg` or `5G` - line five  
+`gg` and `G` - start \ end of the buffer, e.g: `5gg` or `5G` - line five
+`<C-o>` and `<C-i>` - just to previous or the next cursor locations  
 `%` - next bracket or paranthesis  
 `(` and `)` - previous \ next sentence  
 `{` and `}` - start and end of a paragraph  
