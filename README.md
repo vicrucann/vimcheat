@@ -23,11 +23,12 @@ Reference: [ProVim](http://link.springer.com/book/10.1007%2F978-1-4842-0250-0)
 `e:` `<Tab><Tab>...` - cycle through all availabe items  
 
 ## Moving between files
-`:bn` and `:bp` - move to the next\previous buffer in the list  
-`:ls` - list all available buffers   
-`:b#` - move between two last used (primary) buffers  
-`:bf` and `:bl` - first and last  
-`:bm` - next modified  
+* `:bn` and `:bp` - move to the next\previous buffer in the list.
+* `:ls` - list all available buffers.
+* `:b#` - move between two last used (primary) buffers.
+* `:bf` and `:bl` - first and last.
+* `:bm` - next modified.
+* `:b <Tab>` - to cycle through all the open buffers.
 
 ## Saving/quitting  
 `:w`, `:wq` - write/write-and-close, e.g: `:w filename` - save as `filename` and continue working on original  
