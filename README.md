@@ -5,14 +5,15 @@
 Reference: [ProVim](http://link.springer.com/book/10.1007%2F978-1-4842-0250-0)
 
 # Content
-[Working with files](https://github.com/vicrucann/vimcheat/blob/master/README.md#files)  
-[Main commands](https://github.com/vicrucann/vimcheat/blob/master/README.md#commands)  
-[Working with registers](https://github.com/vicrucann/vimcheat/blob/master/README.md#registers)  
-[VISUAL-BLOCK mode](https://github.com/vicrucann/vimcheat/blob/master/README.md#visual-block)  
-[Navigation, search, replace](https://github.com/vicrucann/vimcheat/blob/master/README.md#navigation-search-and-replace)  
-[Makefile](https://github.com/vicrucann/vimcheat/blob/master/README.md#makefile)  
-[Buffer, window and tab management](https://github.com/vicrucann/vimcheat/blob/master/README.md#bufferwindowtab-management)  
-[Spell check](https://github.com/vicrucann/vimcheat/blob/master/README.md#spell-check)  
+[Working with files](#files)  
+[Main commands](#commands)  
+[Working with registers](#registers)  
+[VISUAL-BLOCK mode](#visual-block)  
+[Navigation, search, replace](#navigation-search-and-replace)  
+[Makefile](#makefile)  
+[Buffer, window and tab management](#bufferwindowtab-management)  
+[Spell check](#spell-check)  
+[Editing code](#editing-code)
 
 # Files  
 
@@ -57,8 +58,8 @@ Reference: [ProVim](http://link.springer.com/book/10.1007%2F978-1-4842-0250-0)
 ## `NERDTree` - directory view
 `:NERDTree` - open the directory browser in the current window  
 `:NERDTreeClose` - close the directory browser in the current window  
-`<C>-w-l` - switch the focus from the NERDTree to the file view  
-`<C>-w-h` - switch the focus from the file view to the NERDTree  
+`<C>-w-l` or `<C>w-<right>` - switch the focus from the NERDTree to the file view  
+`<C>-w-h` or `<C>w-<left>` - switch the focus from the file view to the NERDTree  
 
 # Commands  
 `[count]{operator}{[count]motion|text object}`  
@@ -137,14 +138,14 @@ Reference: [ProVim](http://link.springer.com/book/10.1007%2F978-1-4842-0250-0)
 `Esc` - move back to NORMAL mode (and apply the changes to the rest lines of the selection of VISUAL-BLOCK mode)  
 
 ### Navigation, search and replace 
-`[count]gg` or `[count]G` - move cursor to line `count`  
-`f` and `F` - search forward and backward, e.g: `f#` - search `#` character
-`;` and ',' - move your cursor onto next occurence of the character you tried to match with `f` and `F`  
-`/` - using in regex search command, e.g: `/function` - finds all occurences of word `function`  
-`n` and `N` - navigates throughout the search results from `/` operator  
-`%` - detects a block (bracket) and moves to a closing one  
-`vt{x}` and `va{x}` - select until and select around the block, e.g: `va{`, `va[t)` - select around `[` and til `)`  
-`:s/{pattern}/{replacement}/{flags}` - find and replace, e.g: `:%s/foo/bar/gc` - Change each `foo` to `bar`, but ask for confirmation first (flag `g` stands for global and `c` - confirmation first)  
+* `[count]gg` or `[count]G` - move cursor to line `count`  
+* `f` and `F` - search forward and backward, e.g: `f#` - search `#` character
+* `;` and ',' - move your cursor onto next occurence of the character you tried to match with `f` and `F`  
+* `/` - using in regex search command, e.g: `/function` - finds all occurences of word `function`  
+* `n` and `N` - navigates throughout the search results from `/` operator  
+* `%` - detects a block (bracket) and moves to a closing one  
+* `vt{x}` and `va{x}` - select until and select around the block, e.g: `va{`, `va[t)` - select around `[` and til `)`  
+* `:s/{pattern}/{replacement}/{flags}` - find and replace, e.g: `:%s/foo/bar/gc` - Change each `foo` to `bar`, but ask for confirmation first (flag `g` stands for global and `c` - confirmation first). To search/replace only **within the selected lines**: go to the visual mode (e.g. `<Shift>V`) and select the number of lines; then use something like: `:s/search_word/new_word` - it will replace all the matched words within the selection.   
   
 `:find foo.txt` or `:sfind foo.txt` - search specific file or open it in a split window  
 `/searchword` or `?searchword` - highlight "searchword"  
@@ -200,3 +201,13 @@ Reference: [ProVim](http://link.springer.com/book/10.1007%2F978-1-4842-0250-0)
 `zg` - add the word to dictionary  
 `zw` - mark the word as incorrect  
 `set spell spelllang=en_us` - add to vimrc to remember the language setting  
+
+# Working with code
+
+## Commenting using `NERDCommenter`
+
+* `\cc` - comment in visual mode the selected lines.
+* `\cn` - same as above but enforce nesting.
+* `\<Space>` - toggle the comment state of the selected lines based on the state of the topmost line.
+* `\cy` - yank and comment.
+* `\cs` - comment sexily.
